@@ -1,7 +1,29 @@
+#brutal
+#time complexity: O(n2)
+#space complexity: O(1)
+
+#define class
+class Solution:
+#define object methods, alternative: def twoSum(self, nums, target):
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+#define a list
+         result = []
+         for i in range(0, len(nums)):
+             for j in range(i+1,len(nums)):
+                 total = nums[i] + nums[j]
+                 if total == target:
+                     result.append(i);
+                     result.append(j);
+                     return result 
+
+#hashmap
+#time complexity: O(n)
+#space complexity: O(n)
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+#define a dict
          prevHash = {}
-         
+#enumerate loop      
          for i, n in enumerate(nums):
              diff = target - n
              if diff in prevHash:
