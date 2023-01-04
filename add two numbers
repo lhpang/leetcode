@@ -1,6 +1,6 @@
 class Solution:
-Time Complexity: O(max(m,n))
-Space Complexity: O(max(m,n))
+#Time Complexity: O(max(m,n))
+#Space Complexity: O(max(m,n))
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         dummyHead = ListNode(0)
         curr = dummyHead
